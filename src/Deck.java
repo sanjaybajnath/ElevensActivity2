@@ -36,6 +36,7 @@ public class Deck {
 		for (int i = 0;i<ranks.length;i++){
 		    cards.add(new Card(ranks[i],suits[i],values[i]));
         }
+        this.size = cards.size();
     }
 
 
@@ -45,6 +46,10 @@ public class Deck {
      */
     public boolean isEmpty() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+        if (this.size == 0){
+            return true;
+        }
+        return false;
     }
 
     /**
@@ -53,6 +58,7 @@ public class Deck {
      */
     public int size() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+        return this.size;
     }
 
     /**
@@ -70,6 +76,7 @@ public class Deck {
      */
     public Card deal() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+
     }
 
     /**
